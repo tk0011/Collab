@@ -666,8 +666,14 @@ img {
   .profile ul {
     display: none;
   }
+  .profile .btn{
+    margin : 0 5px;
+  }
   .profile-grid {
-        grid-template-areas: 'top' 'about' 'exp' 'github';
+        grid-template-areas: 'top'
+ 'about'
+ 'exp'
+ 'github';
   }
   .profile-grid .profile-top {
     padding: 0;
