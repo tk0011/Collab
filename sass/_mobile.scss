@@ -1,0 +1,113 @@
+@media (max-width: 480px) {
+    .hide-sm {
+        display: none;
+    }
+
+    //container 
+    .container {
+        margin-top: 120px;
+    }
+
+    //text-styles 
+    .x-large {
+        font-size: 36px;
+    }
+
+    .large {
+        font-size: 24px
+    }
+
+    .lead{
+        font-size: 16px;
+    }
+
+    //nav 
+    .navbar {
+        display: block;
+        text-align: center;
+
+        ul{
+            text-align: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin: 5px;
+        }
+    }
+
+    .dash-buttons a{
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    //profiles
+    .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    ul{
+        display: none;
+    }
+}
+
+.profile-grid {
+    grid-template-areas:
+    'top'
+    'about'
+    'exp'
+    'github' ;
+
+    .profile-top {
+            padding: 0;
+            
+        img {
+            margin: 12px 0;
+            padding: 10px;
+        }     
+            
+        .icons {
+            padding: 10px;
+        }
+            .icons a {
+                font-size: 14px;
+            }
+    }
+}
+
+.profile-about {
+    .skills {
+        flex-direction: column;
+    }
+
+}
+    .register {
+        img{
+            display: none;
+        }
+    }
+
+    .login {
+        img{
+            display: none;
+        }
+    }
+
+    .post {
+        display: block;
+        padding: 5px;
+        margin: 15px 0;
+        text-align: center;
+        p{
+            text-align: justify;
+            padding: 8px;
+      }
+        img {
+            padding: 5px 10px;
+        }
+        .btn {
+            margin: 0 1px;
+        }
+    }
+}

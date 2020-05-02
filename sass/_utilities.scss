@@ -1,0 +1,229 @@
+//container
+
+.container {
+   max-width: $max-width;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 30px;
+   margin-top: 80px;
+   margin-bottom: 40px;
+}
+
+//texts
+.x-large{
+   font-size: 48px;
+   line-height: 1.2;
+   margin-bottom: 16px;
+}
+
+.large {
+   font-size: 36px;
+   line-height: 1.2;
+   margin-bottom: 16px;
+}
+
+.lead {
+      font-size: 24px;
+      margin-bottom: 16px;
+}
+
+.text-primary {
+   color: $primary-color;
+}
+
+//backgrounds
+
+.bg {
+    &-primary {
+       @include set-background($primary-color);
+    }
+
+    &-light {
+        @include set-background($light-color);
+        border: 1px solid #ccc ;
+     }
+
+     &-dark {
+        @include set-background($dark-color);
+     }
+
+     &-danger {
+        @include set-background($danger-color);
+     }
+
+     &-success {
+        @include set-background($success-color);
+     }
+
+     &-white {
+        @include set-background(#fff);
+        border: 1px solid #ccc;
+     }
+}
+
+//overlay 
+
+.dark-overlay {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top:0;
+   left: 0;
+   background-color: rgba(0,0,0,0.7);
+}
+
+//Buttons
+.btn {
+   display: inline-block;
+   background: $light-color;
+   color: #333333;
+   padding: 5px 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 18px;
+   margin-right: 12px;
+   outline: none;
+   transition: all 0.2s ease-in-out;
+
+   &.btn-primary{
+      @include set-background($primary-color);
+
+      &:hover {
+         background: lighten($primary-color, 5%)
+      }
+   }
+
+   &.btn-dark{
+      @include set-background($dark-color);
+
+      &:hover {
+         background: lighten($dark-color, 5%)
+      }
+   }
+
+   &.btn-success{
+      @include set-background($success-color);
+
+      &:hover {
+         background: lighten($success-color, 5%)
+      }
+   }
+
+   &.btn-danger{
+      @include set-background($danger-color);
+
+      &:hover {
+         background: lighten($danger-color, 5%)
+      }
+   }
+
+
+  &:hover {
+         background: lighten($dark-color, 5%);
+         color : #fff;
+      }
+   
+}
+
+//line
+
+.line{
+   height: 1px;
+   background: #ccc;
+   margin: 20px 0;
+}
+
+//badges
+.badge{
+   font-size: 14px;
+   padding: 2px;
+   text-align: center;
+   margin: 5px;
+   background: $light-color;
+   color: $dark-color;
+
+   &.badge-primary {
+      @include set-background($primary-color)
+   }
+   &.badge-dark{
+      @include set-background($dark-color)
+   }
+   &.badge-danger {
+      @include set-background($danger-color)
+   }
+   &.badge-success {
+      @include set-background($success-color)
+   }
+}
+
+//form 
+.form {
+   &-group {
+      margin: 20px 0;
+   }
+   &-text {
+      display: block;
+      margin-top: 8px;
+      color: #888;
+   }
+   
+   input[type='text'],
+   input[type='email'],
+   input[type='password'],
+   input[type='date'],
+   select,
+   textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      border: 1px solid #ccc;
+   }
+   input[type='submit'] {
+      font: inherit;
+   }
+}
+
+//tables
+.table{
+   th, td {
+      padding: 15px;
+      text-align: left;
+      width: 30%;
+   }
+   
+   th {
+      background: $light-color;
+   }
+}
+
+.social-input {
+   display: flex;
+
+   i{
+      padding: 8px;
+      width: 100px;
+
+      &.fa-twitter{
+         color: #38a1f3;
+      }
+
+      &.fa-facebook{
+         color: #3b5998;
+      }
+
+      &.fa-instagram{
+         color: #3f729b;
+      }
+
+      &.fa-youtube{
+         color: #da352f;
+      }
+
+      &.fa-linkedin{
+         color: #0077b5;
+      }
+   }
+
+}
+
